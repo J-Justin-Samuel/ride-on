@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.pac-container {
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  margin-top: 6px;
+  overflow: hidden;
+  font-family: inherit;
+  z-index: 99999 !important;
+}
+.pac-item {
+  padding: 10px 16px;
+  font-size: 13px;
+  border-top: 1px solid #f5f5f5;
+  cursor: pointer;
+}
+.pac-item:hover {
+  background: #fff5f0;
+}
+.pac-item-selected {
+  background: #fff5f0;
+}
+.pac-icon {
+  display: none;
+}
+.pac-matched {
+  color: #ff5900;
+  font-weight: 600;
+}
