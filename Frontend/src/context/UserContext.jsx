@@ -10,7 +10,7 @@ const UserContext = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // ── Auto-restore session from token on app load ──────────────────────────
+  // ── Auto-restore session from token on app load
   useEffect(() => {
     const token = localStorage.getItem("userToken");
     if (!token) return;
