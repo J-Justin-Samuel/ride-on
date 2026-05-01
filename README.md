@@ -95,11 +95,71 @@
 5. Live location updates streamed  
 6. Ride completes → summary generated  
 
+## 🌍 Deployment
+
+| Service  | Platform        |
+|----------|-----------------|
+| Frontend | Vercel          |
+| Backend  | Render          |
+| Database | MongoDB Atlas   |
+
 ---
 
-## ⚙️ Installation & Setup
+## 🧩 Key Challenges & Solutions
 
-### 1️⃣ Clone the repository
-```bash
-git clone https://github.com/J-Justin-Samuel/ride-on.git
-cd ride-on
+### 🔹 Real-Time Communication
+Implemented full-duplex communication using **Socket.io** for:
+- Ride requests  
+- Driver updates  
+- Ride completion  
+
+---
+
+### 🔹 Driver Matching (Radius Filtering)
+Used the **Haversine formula** to filter drivers within a 5 km radius.
+
+---
+
+### 🔹 Session Collision Fix
+Resolved token conflicts by:
+- Using separate `localStorage` keys  
+- Managing distinct cookies  
+
+---
+
+### 🔹 Responsive UI
+- **Mobile:** Bottom sheet interface  
+- **Desktop:** Sidebar layout  
+
+---
+
+### 🔹 Edge Case Handling
+- Ride cancellation  
+- Driver race conditions  
+- GPS fallback  
+
+---
+
+## 📊 Future Improvements
+
+- 💳 Payment integration (Stripe/Razorpay)  
+- 📱 Mobile app (React Native)  
+- ⭐ Rating & review system  
+- 🔔 Push notifications  
+- 🧠 Smart driver allocation  
+
+---
+
+## 👨‍💻 Author
+
+**Justin Samuel**
+
+- Live: [RideOn](https://ride-on-hazel.vercel.app/)
+- GitHub: [J-Justin-Samuel](https://github.com/J-Justin-Samuel)  
+- LinkedIn: [J-Justin-Samuel](https://www.linkedin.com/in/j-justin-samuel/)
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
